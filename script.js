@@ -56,3 +56,9 @@ console.log(`${arrLoop} this is the looped array`)
 console.log(arrayChecker(['abc', 'abc','xyz','abcd','cde'], ['abc', 'cde', 'uap'],[2, 1, 0]))
 console.log(arrayChecker(['abc', 'xyz','abc', 'xyz','cde'], ['abc', 'cde', 'xyz'],[2, 1, 2]))
 console.log(arrayChecker(['quick', 'brown', 'fox', 'is', 'quick'], ['quick', 'abc', 'fox'], [2, 0, 1]))
+
+
+// Sum all the numbers of the array except the highest and the lowest element (the value, not the index!).
+// Example:
+// [ 6, 2, 1, 8, 10 ] => 16
+// [ 1, 1, 11, 2, 3 ] => 6

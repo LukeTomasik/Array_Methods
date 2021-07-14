@@ -64,12 +64,6 @@ function removeConsecDupes (str) {
 
 console.log(removeConsecDupes('alpha beta beta gamma gamma delta alpha beta beta gamma gamma delta'))
 
-
-
-
-
-
-
 // Sum all the numbers of the array except the highest and the lowest element (the value, not the index!).
 // Example:
 // [ 6, 2, 1, 8, 10 ] => 16
@@ -77,6 +71,15 @@ console.log(removeConsecDupes('alpha beta beta gamma gamma delta alpha beta beta
 
 /*///////////////////////////////////////////////////////////////////////////////////
 
-    filter method => .filter( (element,index,arr) => {} )
+    write a function that when given a url as a string parses out the domain name and returns it as a string. 
 
 *//////////////////////////////////////////////////////////////////////////////////////////
+
+function domainName () {
+    return str.replace('https://','').replace('https://',"").replace('www.','').split('.')[0]
+}
+
+
+console.log(domainName('https://github.com/carbonfive'))
+console.log(domainName('https://www.zombie-bites.com'))
+console.log(domainName('https://www.cnet.com'))

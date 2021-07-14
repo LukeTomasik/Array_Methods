@@ -58,7 +58,25 @@ console.log(arrayChecker(['abc', 'xyz','abc', 'xyz','cde'], ['abc', 'cde', 'xyz'
 console.log(arrayChecker(['quick', 'brown', 'fox', 'is', 'quick'], ['quick', 'abc', 'fox'], [2, 0, 1]))
 
 
+function removeConsecDupes (str) {
+    return str.split('').filter ((e,i,arr) => e != arr[i-1]).join(' ')
+}
+
+console.log(removeConsecDupes('alpha beta beta gamma gamma delta alpha beta beta gamma gamma delta'))
+
+
+
+
+
+
+
 // Sum all the numbers of the array except the highest and the lowest element (the value, not the index!).
 // Example:
 // [ 6, 2, 1, 8, 10 ] => 16
 // [ 1, 1, 11, 2, 3 ] => 6
+
+/*///////////////////////////////////////////////////////////////////////////////////
+
+    filter method => .filter( (element,index,arr) => {} )
+
+*//////////////////////////////////////////////////////////////////////////////////////////

@@ -83,3 +83,17 @@ function domainName () {
 console.log(domainName('https://github.com/carbonfive'))
 console.log(domainName('https://www.zombie-bites.com'))
 console.log(domainName('https://www.cnet.com'))
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////
+
+    creates a unique string using set
+
+*//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+const longestPossible = (str1,str2) => [...new Set(str1+str2)].sort().join('')
+
+console.log(longestPossible('xyaabbbccccdefww','xxxxyyyyabklmnopq'))

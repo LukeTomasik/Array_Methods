@@ -75,14 +75,14 @@ console.log(removeConsecDupes('alpha beta beta gamma gamma delta alpha beta beta
 
 *//////////////////////////////////////////////////////////////////////////////////////////
 
-function domainName () {
-    return str.replace('https://','').replace('https://',"").replace('www.','').split('.')[0]
-}
+                // function domainName (str) {
+                //     return str.replace('https://','').replace('https://',"").replace('www.','').split('.')[0]
+                // }
 
 
-console.log(domainName('https://github.com/carbonfive'))
-console.log(domainName('https://www.zombie-bites.com'))
-console.log(domainName('https://www.cnet.com'))
+                // console.log(domainName('https://github.com/carbonfive'))
+                // console.log(domainName('https://www.zombie-bites.com'))
+                // console.log(domainName('https://www.cnet.com'))
 
 
 
@@ -94,6 +94,62 @@ console.log(domainName('https://www.cnet.com'))
 
 
 
-const longestPossible = (str1,str2) => [...new Set(str1+str2)].sort().join('')
+        const longestPossible = (str1,str2) => [...new Set(str1+str2)].sort().join('')
 
-console.log(longestPossible('xyaabbbccccdefww','xxxxyyyyabklmnopq'))
+        console.log(longestPossible('xyaabbbccccdefww','xxxxyyyyabklmnopq'))
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////
+
+    sort first names and last name by alphabetical order
+
+*//////////////////////////////////////////////////////////////////////////////////////////
+
+
+function sortNames (str) {
+    let newStr = str.toUpperCase().split(';').map( n => n.split(':').reverse().join(', '))
+    .sort()
+    .join(')(')
+    return '(' + newStr + ')'
+}
+
+
+console.log(sortNames('Fred;Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill'))
+
+/*///////////////////////////////////////////////////////////////////////////////////
+
+    Given a string of words, you need to find the highest scoring word.
+
+Each letter of a word scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
+
+You need to return the highest scoring word as a string.
+
+If two words score the same, return the word that appears earliest in the original string.
+
+All letters will be lowercase and all inputs will be valid.
+
+Test.assertEquals(high('man i need a taxi up to ubud'), 'taxi');
+Test.assertEquals(high('what time are we climbing up the volcano'), 'volcano'); 
+Test.assertEquals(high('take me to semynak'), 'semynak'); 
+
+*//////////////////////////////////////////////////////////////////////////////////////////
+
+function high(x) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    const word = word => word.split('').reduce((a,c) => a + alphabet.indexOf((c),0))
+    let highestWord =''
+    let highestCount = 0
+    x.split('').forEach(w => {
+        const scoreCheck = score(w)
+        if(scoreCheck > highestCount) {
+            highestWord = w
+            highestCount = scoreCheck
+        }
+    })
+    return highestWord
+}
+console.log(high('man i need a taxi up to ubud'),'taxi')
+
+

@@ -6,12 +6,12 @@
 
 */////////////////////////////////////////////////////////////////////////////////
 
-const palindromeChecker = (str) => str === str.split('').reverse().join('')
+            // const palindromeChecker = (str) => str === str.split('').reverse().join('')
 
 
-console.log(palindromeChecker('racecar'),true)
-console.log(palindromeChecker('bob'),true)
-console.log(palindromeChecker('rocket'),false)
+            // console.log(palindromeChecker('racecar'),true)
+            // console.log(palindromeChecker('bob'),true)
+            // console.log(palindromeChecker('rocket'),false)
 
 /*///////////////////////////////////////////////////////////////////////////////////
 
@@ -19,10 +19,10 @@ console.log(palindromeChecker('rocket'),false)
 
 *//////////////////////////////////////////////////////////////////////////////////////////
 
-const arr = ['dog','cat', 'hippo']
+            // const arr = ['dog','cat', 'hippo']
 
-const newArr = arr.map((e,i,a) => e )
-console.log(newArr)
+            // const newArr = arr.map((e,i,a) => e )
+            // console.log(newArr)
 
 
 
@@ -43,26 +43,26 @@ console.log(newArr)
     Test.assertDeepEquals(solve(['quick', 'brown', 'fox', 'is', 'quick'], ['quick', 'abc', 'fox']), [2, 0, 1]);
 
     */
-const arrayChecker = (arrOne,arrTwo) => {
-  let arrLoop = arrTwo.map((el, i) => {
-    
-        filteredArray = arrOne.filter((li) => li === el )
-        return filteredArray.length
-})
-console.log(`${arrLoop} this is the looped array`)
-  return arrLoop
-}
+        // const arrayChecker = (arrOne,arrTwo) => {
+        // let arrLoop = arrTwo.map((el, i) => {
+            
+        //         filteredArray = arrOne.filter((li) => li === el )
+        //         return filteredArray.length
+        // })
+        // console.log(`${arrLoop} this is the looped array`)
+        // return arrLoop
+        // }
 
-console.log(arrayChecker(['abc', 'abc','xyz','abcd','cde'], ['abc', 'cde', 'uap'],[2, 1, 0]))
-console.log(arrayChecker(['abc', 'xyz','abc', 'xyz','cde'], ['abc', 'cde', 'xyz'],[2, 1, 2]))
-console.log(arrayChecker(['quick', 'brown', 'fox', 'is', 'quick'], ['quick', 'abc', 'fox'], [2, 0, 1]))
+        // console.log(arrayChecker(['abc', 'abc','xyz','abcd','cde'], ['abc', 'cde', 'uap'],[2, 1, 0]))
+        // console.log(arrayChecker(['abc', 'xyz','abc', 'xyz','cde'], ['abc', 'cde', 'xyz'],[2, 1, 2]))
+        // console.log(arrayChecker(['quick', 'brown', 'fox', 'is', 'quick'], ['quick', 'abc', 'fox'], [2, 0, 1]))
 
 
-function removeConsecDupes (str) {
-    return str.split('').filter ((e,i,arr) => e != arr[i-1]).join(' ')
-}
+        // function removeConsecDupes (str) {
+        //     return str.split('').filter ((e,i,arr) => e != arr[i-1]).join(' ')
+        // }
 
-console.log(removeConsecDupes('alpha beta beta gamma gamma delta alpha beta beta gamma gamma delta'))
+        // console.log(removeConsecDupes('alpha beta beta gamma gamma delta alpha beta beta gamma gamma delta'))
 
 // Sum all the numbers of the array except the highest and the lowest element (the value, not the index!).
 // Example:
@@ -94,9 +94,9 @@ console.log(removeConsecDupes('alpha beta beta gamma gamma delta alpha beta beta
 
 
 
-        const longestPossible = (str1,str2) => [...new Set(str1+str2)].sort().join('')
+        // const longestPossible = (str1,str2) => [...new Set(str1+str2)].sort().join('')
 
-        console.log(longestPossible('xyaabbbccccdefww','xxxxyyyyabklmnopq'))
+        // console.log(longestPossible('xyaabbbccccdefww','xxxxyyyyabklmnopq'))
 
 
 
@@ -108,15 +108,15 @@ console.log(removeConsecDupes('alpha beta beta gamma gamma delta alpha beta beta
 *//////////////////////////////////////////////////////////////////////////////////////////
 
 
-function sortNames (str) {
-    let newStr = str.toUpperCase().split(';').map( n => n.split(':').reverse().join(', '))
-    .sort()
-    .join(')(')
-    return '(' + newStr + ')'
-}
+        // function sortNames (str) {
+        //     let newStr = str.toUpperCase().split(';').map( n => n.split(':').reverse().join(', '))
+        //     .sort()
+        //     .join(')(')
+        //     return '(' + newStr + ')'
+        // }
 
 
-console.log(sortNames('Fred;Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill'))
+        // console.log(sortNames('Fred;Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill'))
 
 /*///////////////////////////////////////////////////////////////////////////////////
 
@@ -136,20 +136,38 @@ Test.assertEquals(high('take me to semynak'), 'semynak');
 
 *//////////////////////////////////////////////////////////////////////////////////////////
 
-function high(x) {
-    const alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    const word = word => word.split('').reduce((a,c) => a + alphabet.indexOf((c),0))
-    let highestWord =''
-    let highestCount = 0
-    x.split('').forEach(w => {
-        const scoreCheck = score(w)
-        if(scoreCheck > highestCount) {
-            highestWord = w
-            highestCount = scoreCheck
-        }
-    })
-    return highestWord
-}
-console.log(high('man i need a taxi up to ubud'),'taxi')
+        // function high(x) {
+        //     const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        //     const word = word => word.split('').reduce((a,c) => a + alphabet.indexOf((c),0))
+        //     let highestWord =''
+        //     let highestCount = 0
+        //     x.split('').forEach(w => {
+        //         const scoreCheck = word(w)
+        //         if(scoreCheck > highestCount) {
+        //             highestWord = w
+        //             highestCount = scoreCheck
+        //         }
+        //     })
+        //     return highestWord
+        // }
+        // console.log(high('man i need a taxi up to ubud'),'taxi')
 
-
+// let arr = []
+// const test = (drink) => {
+    
+//     if(arr.length === 0) {
+//         arr.push(drink)
+//     } else if (arr.length >= 1) {
+//         arr.map(el => {
+//             drink === el ? console.log('drink exists') : arr.push(drink)
+//         })
+//     }
+    
+    
+// }
+// test('drink')
+// test('tequila')
+// test('vodka')
+// test('whisk')
+// // arr = []
+// console.log(arr)

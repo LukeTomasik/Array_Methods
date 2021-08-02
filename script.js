@@ -186,9 +186,25 @@ assert.deepEqual(sortArray([5, 3, 2, 8, 1, 4]), [1, 3, 2, 8, 5, 4]);
 assert.deepEqual(sortArray([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0]);
 
 */
-
 const sortNums = (arr) => {
     const oddNums = arr.filter(x => x % 2).sort((a,b) => a-b)
     return arr.map(n => n% 2 ? oddNums.shift() : n)
 }
+/*
+The starting array sequence is [1,2,3,4,5,6,7,8,9]
+The mixed array with one deleted number is [3,2,4,6,7,8,1,9]
+Your function should return the int 5.
+If no number was deleted from the array and no difference with it, your function should return the int 0.
 
+Note: N may be 1 or less (in the latter case, the first array will be []).
+
+Test.assertEquals(findDeletedNumber([1,2,3,4,5], [3,4,1,5]), 2, 'Deletion')
+Test.assertEquals(findDeletedNumber([1,2,3,4,5,6,7,8,9], [1,9,7,4,6,2,3,8]), 5, 'Deletion')
+Test.assertEquals(findDeletedNumber([1,2,3,4,5,6,7,8,9], [5,7,6,9,4,8,1,2,3]), 0, 'No deletion')
+
+*/
+
+
+function findDeleteNum(arr,mixWDel) {
+    return arr.filter(v => mixWDel.indexOf(v) === -1) [0] || 0
+}

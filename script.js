@@ -229,7 +229,9 @@ Examples
 
 */
 
-
+// function missingVal(str) {
+//    return [...'aeiou'].findIndex(letter => !String.includes(letter))
+// }
 
 
 

@@ -186,10 +186,12 @@ assert.deepEqual(sortArray([5, 3, 2, 8, 1, 4]), [1, 3, 2, 8, 5, 4]);
 assert.deepEqual(sortArray([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0]);
 
 */
-const sortNums = (arr) => {
-    const oddNums = arr.filter(x => x % 2).sort((a,b) => a-b)
-    return arr.map(n => n% 2 ? oddNums.shift() : n)
-}
+
+
+// const sortNums = (arr) => {
+//     const oddNums = arr.filter(x => x % 2).sort((a,b) => a-b)
+//     return arr.map(n => n% 2 ? oddNums.shift() : n)
+// }
 /*
 The starting array sequence is [1,2,3,4,5,6,7,8,9]
 The mixed array with one deleted number is [3,2,4,6,7,8,1,9]
@@ -205,6 +207,30 @@ Test.assertEquals(findDeletedNumber([1,2,3,4,5,6,7,8,9], [5,7,6,9,4,8,1,2,3]), 0
 */
 
 
-function findDeleteNum(arr,mixWDel) {
-    return arr.filter(v => mixWDel.indexOf(v) === -1) [0] || 0
-}
+// function findDeleteNum(arr,mixWDel) {
+//     return arr.filter(v => mixWDel.indexOf(v) === -1) [0] || 0
+// }
+
+/*
+
+Your job is to figure out the index of which vowel is missing from a given string:
+
+A has an index of 0,
+E has an index of 1,
+I has an index of 2,
+O has an index of 3,
+U has an index of 4.
+Notes: There is no need for string validation and every sentence given will contain all vowles but one. Also, you won't need to worry about capitals.
+
+Examples
+"John Doe hs seven red pples under his bsket"          =>  0  ; missing: "a"
+"Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
+
+
+*/
+
+
+
+
+
+

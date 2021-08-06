@@ -233,6 +233,15 @@ Examples
 //    return [...'aeiou'].findIndex(letter => !String.includes(letter))
 // }
 
+/*
 
 
+*/
 
+function avgRep(arr) {
+    const avg = Math.round(arr.join('').length / arr.length)
+    return arr.map(e => e[0].repeat(avg))
+
+}
+
+console.log(avgRep(['aa','bbb','cccc']))

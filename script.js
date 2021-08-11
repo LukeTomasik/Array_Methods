@@ -247,14 +247,35 @@ Examples
 // console.log(avgRep(['aa','bbb','cccc']))
 
 
-var removeDuplicates = function(nums) {
-    const newArr = []
-    for (let key of nums) {
-        !newArr.includes(key) ? newArr.push(key) : ''
-    }
+// var removeDuplicates = function(nums) {
+//     const newArr = []
+//     for (let key of nums) {
+//         !newArr.includes(key) ? newArr.push(key) : ''
+//     }
        
     
-    return newArr
-};
+//     return newArr
+// };
 
-console.log(removeDuplicates([1,1,2]))
+// console.log(removeDuplicates([1,1,2]))
+
+
+
+// Given a string of characters, return the character that appears the most often.
+
+function mostOften(str) {
+    const characters = {}
+    for (let char of str) {
+        characters[char] = characters[char] +1 || 1
+    }
+    let mostCount = 0
+    let mostCharacter = null
+
+    for (let char in characters ){
+        if(characters[char] > mostCount) {
+            mostCount = characters[char]
+            mostCharacter = char
+        }
+    }
+    return mostCharacter
+}

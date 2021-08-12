@@ -263,19 +263,34 @@ Examples
 
 // Given a string of characters, return the character that appears the most often.
 
-function mostOften(str) {
-    const characters = {}
-    for (let char of str) {
-        characters[char] = characters[char] +1 || 1
-    }
-    let mostCount = 0
-    let mostCharacter = null
+    // function mostOften(str) {
+    //     const characters = {}
+    //     for (let char of str) {
+    //         characters[char] = characters[char] +1 || 1
+    //     }
+    //     let mostCount = 0
+    //     let mostCharacter = null
 
-    for (let char in characters ){
-        if(characters[char] > mostCount) {
-            mostCount = characters[char]
-            mostCharacter = char
+    //     for (let char in characters ){
+    //         if(characters[char] > mostCount) {
+    //             mostCount = characters[char]
+    //             mostCharacter = char
+    //         }
+    //     }
+    //     return mostCharacter
+    // }
+
+// Given a string of word or phrases, count the number of vowels
+
+// no regex, 
+
+    function countVowels(str) {
+        let count =0
+        const vowels = 'aeiou'
+        for (let char of str.toLowerCase()) {
+            if ( vowels.includes(char)) {
+                count++
+            }
         }
-    }
-    return mostCharacter
-}
+        return count
+        }

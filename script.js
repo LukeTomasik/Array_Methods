@@ -296,4 +296,32 @@ Examples
     //     }
 
 
+   
+
+    //   function findAllHobbyists(hobby, hobbies) {
+    //     const arr = []
+    //     for (let name in hobbies) {
+    //        for (let i =0; i <hobbies[name].length; i++) {
+        
+               
+    //             hobbies[name][i].includes(hobby) ? arr.push(name) : " null"
+              
+    //             // console.log(hobbies[name][i])
+    //        }
+    //     // console.log(hobbies[name])
+        
+    //     }
+    //         console.log(arr)
+    //     //return ;
+    //   }
+      
+    //   var hobbies = {
+    //     "Steve": ['Fashion', 'Piano', 'Reading'],
+    //     "Patty": ['Drama', 'Magic', 'Pets'],
+    //     "Chad": ['Puzzles', 'Pets', 'Yoga']
+    //   };
+      
+    //   console.log(findAllHobbyists('Yoga', hobbies));
+
+
 

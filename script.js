@@ -589,6 +589,7 @@ Examples
 // f(n) = f(n-1) + f(n-2), for n > 1
 
 // recursion method - function keeps calling itself untill ( in this case) its less then 2
+
 function fib(n) {
   if(n<2) {return n}
   return fib(n-1) + fib(n-2)

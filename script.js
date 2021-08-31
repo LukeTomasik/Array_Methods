@@ -333,203 +333,203 @@ Examples
 //        FROM     movies
 //        GROUP BY directorId) m ON d.id = m.directorId
 
-var sampleData = [
-  {
-    product: "milk",
-    desc: "2%",
-    size: "gallon",
-    city: "Cleveland",
-    state: "OH",
-    price: 2.9,
-  },
-  {
-    product: "milk",
-    desc: "1%",
-    size: "gallon",
-    city: "Cleveland",
-    state: "OH",
-    price: 2.9,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "Cleveland",
-    state: "OH",
-    price: 2.9,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "Columbus",
-    state: "OH",
-    price: 3.12,
-  },
-  {
-    product: "milk",
-    desc: "2%",
-    size: "gallon",
-    city: "Columbus",
-    state: "OH",
-    price: 3.1,
-  },
-  {
-    product: "milk",
-    desc: "1%",
-    size: "gallon",
-    city: "Columbus",
-    state: "OH",
-    price: 3.08,
-  },
-  {
-    product: "milk",
-    desc: "2%",
-    size: "gallon",
-    city: "Toledo",
-    state: "OH",
-    price: 2.85,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "Toledo",
-    state: "OH",
-    price: 2.85,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "Toledo",
-    state: "OH",
-    price: 2.85,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "Chicago",
-    state: "IL",
-    price: 3.94,
-  },
-  {
-    product: "milk",
-    desc: "1%",
-    size: "gallon",
-    city: "Chicago",
-    state: "IL",
-    price: 3.97,
-  },
-  {
-    product: "milk",
-    desc: "2%",
-    size: "gallon",
-    city: "Chicago",
-    state: "IL",
-    price: 3.99,
-  },
-  {
-    product: "milk",
-    desc: "2%",
-    size: "gallon",
-    city: "Miami",
-    state: "FL",
-    price: 3.33,
-  },
-  {
-    product: "milk",
-    desc: "1%",
-    size: "gallon",
-    city: "Miami",
-    state: "FL",
-    price: 3.33,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "Miami",
-    state: "FL",
-    price: 3.33,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "San Diego",
-    state: "CA",
-    price: 3.53,
-  },
-  {
-    product: "milk",
-    desc: "2%",
-    size: "gallon",
-    city: "Columbus",
-    state: "GA",
-    price: 2.9,
-  },
-  {
-    product: "milk",
-    desc: "1%",
-    size: "gallon",
-    city: "Springfield",
-    state: "IL",
-    price: 3.01,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "Springfield",
-    state: "IL",
-    price: 3.01,
-  },
-  {
-    product: "milk",
-    desc: "skim",
-    size: "gallon",
-    city: "Springfield",
-    state: "IL",
-    price: 3.01,
-  },
-];
+// var sampleData = [
+//   {
+//     product: "milk",
+//     desc: "2%",
+//     size: "gallon",
+//     city: "Cleveland",
+//     state: "OH",
+//     price: 2.9,
+//   },
+//   {
+//     product: "milk",
+//     desc: "1%",
+//     size: "gallon",
+//     city: "Cleveland",
+//     state: "OH",
+//     price: 2.9,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "Cleveland",
+//     state: "OH",
+//     price: 2.9,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "Columbus",
+//     state: "OH",
+//     price: 3.12,
+//   },
+//   {
+//     product: "milk",
+//     desc: "2%",
+//     size: "gallon",
+//     city: "Columbus",
+//     state: "OH",
+//     price: 3.1,
+//   },
+//   {
+//     product: "milk",
+//     desc: "1%",
+//     size: "gallon",
+//     city: "Columbus",
+//     state: "OH",
+//     price: 3.08,
+//   },
+//   {
+//     product: "milk",
+//     desc: "2%",
+//     size: "gallon",
+//     city: "Toledo",
+//     state: "OH",
+//     price: 2.85,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "Toledo",
+//     state: "OH",
+//     price: 2.85,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "Toledo",
+//     state: "OH",
+//     price: 2.85,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "Chicago",
+//     state: "IL",
+//     price: 3.94,
+//   },
+//   {
+//     product: "milk",
+//     desc: "1%",
+//     size: "gallon",
+//     city: "Chicago",
+//     state: "IL",
+//     price: 3.97,
+//   },
+//   {
+//     product: "milk",
+//     desc: "2%",
+//     size: "gallon",
+//     city: "Chicago",
+//     state: "IL",
+//     price: 3.99,
+//   },
+//   {
+//     product: "milk",
+//     desc: "2%",
+//     size: "gallon",
+//     city: "Miami",
+//     state: "FL",
+//     price: 3.33,
+//   },
+//   {
+//     product: "milk",
+//     desc: "1%",
+//     size: "gallon",
+//     city: "Miami",
+//     state: "FL",
+//     price: 3.33,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "Miami",
+//     state: "FL",
+//     price: 3.33,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "San Diego",
+//     state: "CA",
+//     price: 3.53,
+//   },
+//   {
+//     product: "milk",
+//     desc: "2%",
+//     size: "gallon",
+//     city: "Columbus",
+//     state: "GA",
+//     price: 2.9,
+//   },
+//   {
+//     product: "milk",
+//     desc: "1%",
+//     size: "gallon",
+//     city: "Springfield",
+//     state: "IL",
+//     price: 3.01,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "Springfield",
+//     state: "IL",
+//     price: 3.01,
+//   },
+//   {
+//     product: "milk",
+//     desc: "skim",
+//     size: "gallon",
+//     city: "Springfield",
+//     state: "IL",
+//     price: 3.01,
+//   },
+// ];
 
-var avgPriceGallonMilk = function (data) {
-  let avg = [];
-  for (let entry of data) {
-    avg.push(entry["price"]);
-  }
+// var avgPriceGallonMilk = function (data) {
+//   let avg = [];
+//   for (let entry of data) {
+//     avg.push(entry["price"]);
+//   }
 
-  let ans = avg.reduce((a, b) => a + b) / avg.length;
-  console.log(Math.floor(ans), 'nearest');
-  console.log(Math.round(ans * 100) / 100);
-};
+//   let ans = avg.reduce((a, b) => a + b) / avg.length;
+//   console.log(Math.floor(ans), 'nearest');
+//   console.log(Math.round(ans * 100) / 100);
+// };
 
-var avgPriceGallonMilkOhio = function (data) {
-  let avg = [];
-  for (let entry of data) {
-    entry["state"] === "OH" ? avg.push(entry["price"]) : "";
-    avg.push(entry["price"]);
-  }
-  let ans = avg.reduce((a, b) => a + b) / avg.length;
-  console.log(ans)
-  console.log(Math.round(ans * 100) / 100);
-};
+// var avgPriceGallonMilkOhio = function (data) {
+//   let avg = [];
+//   for (let entry of data) {
+//     entry["state"] === "OH" ? avg.push(entry["price"]) : "";
+//     avg.push(entry["price"]);
+//   }
+//   let ans = avg.reduce((a, b) => a + b) / avg.length;
+//   console.log(ans)
+//   console.log(Math.round(ans * 100) / 100);
+// };
 
-var avgPriceGallonMilkColumbusOhio = function (data) {
-  let avg = [];
-  for (let entry of data) {
-    entry["state"] === "OH" && entry["city"] === "Columbus"
-      ? avg.push(entry["price"])
-      : "";
-    avg.push(entry["price"]);
-  }
-  let ans = avg.reduce((a, b) => a + b) / avg.length;
-  console.log(ans)
-  console.log(Math.round(ans * 100) / 100);
-};
+// var avgPriceGallonMilkColumbusOhio = function (data) {
+//   let avg = [];
+//   for (let entry of data) {
+//     entry["state"] === "OH" && entry["city"] === "Columbus"
+//       ? avg.push(entry["price"])
+//       : "";
+//     avg.push(entry["price"]);
+//   }
+//   let ans = avg.reduce((a, b) => a + b) / avg.length;
+//   console.log(ans)
+//   console.log(Math.round(ans * 100) / 100);
+// };
 
 // var avgPriceGallonTwoPercMilk = function(data){
 //     let avg = [];
@@ -578,8 +578,19 @@ var avgPriceGallonMilkColumbusOhio = function (data) {
 
 
 
-avgPriceGallonMilk(sampleData);
-avgPriceGallonMilkOhio(sampleData);
-avgPriceGallonMilkColumbusOhio(sampleData)
-// avgPriceGallonTwoPercMilk(sampleData)
-// stateWithHighestGallonMilkPrice(sampleData)
+// avgPriceGallonMilk(sampleData);
+// avgPriceGallonMilkOhio(sampleData);
+// avgPriceGallonMilkColumbusOhio(sampleData)
+// // avgPriceGallonTwoPercMilk(sampleData)
+// // stateWithHighestGallonMilkPrice(sampleData)
+
+//fibonocci numbers 
+//f(0) = 0,f(1) = 1
+// f(n) = f(n-1) + f(n-2), for n > 1
+
+// recursion method - function keeps calling itself untill ( in this case) its less then 2
+function fib(n) {
+  if(n<2) {return n}
+  return fib(n-1) + fib(n-2)
+
+}
